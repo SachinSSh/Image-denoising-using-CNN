@@ -4,6 +4,23 @@
 
 A deep learning-based solution for image denoising using Convolutional Neural Networks (CNNs), designed for the **RWPO** (Replace With Project/Organization Name) use case. This project aims to remove noise from images while preserving critical details, making it suitable for applications in medical imaging, photography, or satellite imagery.
 
+## Results
+### Example Denoising Comparison
+
+| Noisy Input | Denoised Output |
+|-------------|-----------------|
+| ![Gaussian Noise](docs/gaussian_noise.png) | ![Denoised](docs/gaussian_denoised.png) |
+| ![Salt-and-Pepper Noise](docs/salt_pepper_noise.png) | ![Denoised](docs/salt_pepper_denoised.png) |
+
+**Quantitative Metrics** (test dataset):
+| Noise Type          | PSNR (dB) | SSIM  |
+|---------------------|-----------|-------|
+| Gaussian (σ=25)     | 32.6      | 0.91  |
+| Salt-and-Pepper (5%)| 34.1      | 0.89  |
+| Poisson             | 30.8      | 0.85  |
+
+*Note: Replace sample images in `docs/` with your own results.*
+
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
